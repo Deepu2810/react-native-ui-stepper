@@ -177,7 +177,7 @@ class UIStepper extends Component {
     if (imageWidth > containerWidth) {
       return containerWidth;
     }
-    return imageWidth;
+    return 10;
   };
   validate = (value, callback) => {
     const {
@@ -305,7 +305,7 @@ class UIStepper extends Component {
           />
         </TouchableOpacity>
         {displayValue && (
-          <View style={styles.valueContainer}>
+          <View style={[styles.valueContainer, {backgroundColor:'#f1f1f1'}]}>
             <Text style={{ color: textColor, fontSize, fontFamily }}>
               {this.state.value}
             </Text>
