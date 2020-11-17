@@ -269,6 +269,7 @@ class UIStepper extends Component {
       vertical,
       displayDecrementFirst,
       fontFamily,
+      showDecrementButton
     } = this.props;
     return (
       <View
@@ -287,6 +288,7 @@ class UIStepper extends Component {
           },
         ]}
       >
+       {showDecrementButton == true &&
         <TouchableOpacity
           onPress={this.decrement}
           style={[
@@ -304,6 +306,7 @@ class UIStepper extends Component {
             resizeMode={'contain'}
           />
         </TouchableOpacity>
+       }
         {displayValue && (
           <View style={[styles.valueContainer, {backgroundColor:'#f1f1f1'}]}>
             <Text style={{ color: textColor, fontSize, fontFamily }}>
