@@ -308,7 +308,7 @@ class UIStepper extends Component {
         </TouchableOpacity>
        }
         {displayValue && (
-          <View style={[styles.valueContainer, {backgroundColor:'#f1f1f1'}]}>
+          <View style={[styles.valueContainer, {backgroundColor:'#fec92d'}]}>
             <Text style={{ color: textColor, fontSize, fontFamily }}>
               {this.state.value}
             </Text>
